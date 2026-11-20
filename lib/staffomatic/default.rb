@@ -18,8 +18,7 @@ module Staffomatic
     # Default media type
     MEDIA_TYPE   = "application/vnd.staffomatic.v3+json"
 
-    # In Faraday 0.9, Faraday::Builder was renamed to Faraday::RackBuilder
-    RACK_BUILDER_CLASS = defined?(Faraday::RackBuilder) ? Faraday::RackBuilder : Faraday::Builder
+    RACK_BUILDER_CLASS = Faraday::RackBuilder
 
     # Default Faraday middleware stack
     MIDDLEWARE = RACK_BUILDER_CLASS.new do |builder|
