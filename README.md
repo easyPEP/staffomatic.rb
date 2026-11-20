@@ -1,3 +1,6 @@
+> **Archived (2026-11-20).** This gem talks to the old Staffomatic API v3. For the current API see **https://developers.staffomatic.com**.
+> Only remaining consumer: easyPEP/staffomatic_add_on_personio_sync, pinned to tag `v4.0.0`. Unarchive if it needs a fix.
+
 # Staffomatic
 
 Ruby toolkit for the Staffomatic API
