@@ -189,7 +189,7 @@ module Staffomatic
         http.headers[:user_agent] = user_agent
         http.headers[:content_type] = content_type
         if basic_authenticated?
-          http.basic_auth(@email, @password)
+          http.request :authorization, :basic, @email, @password
         elsif token_authenticated?
           # Original octocit implementation: http.authorization 'token', @access_token
           # Doorkeeper aka Oauth `http://oauth.net/documentation/`
